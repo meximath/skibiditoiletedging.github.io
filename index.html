@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9H6FJQVZMY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9H6FJQVZMY');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H6FJQVZMY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9H6FJQVZMY');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Szvy Central</title>
@@ -20,13 +19,13 @@
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: 991111;
+      background-color: #000;
       color: #fff;
     }
 
     header {
       font-family: 'Press Start 2P', cursive;
-      background-color: #222;
+      background-color: #0f0;
       color: #4CAF50;
       padding: 20px;
       font-size: 28px;
@@ -39,41 +38,41 @@
 
     #logo {
       border-radius: 50%;
-      width: 50px;
-      height: 50px;
+      width: 100px; /* Adjust the size of the logo as needed */
+      height: 100px; /* Adjust the size of the logo as needed */
       margin-right: 10px;
     }
 
     .button-container {
       text-align: center;
-      margin: 20px 10px;
-      width: calc(100% / 3 - 20px);
+      margin: 10px 5px;
+      width: calc(100% / 3 - 10px);
       box-sizing: border-box;
     }
 
     .button {
       font-family: 'PT Mono', monospace;
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: #4CAF50;
+      padding: 5px 10px;
+      font-size: 12px;
+      background-color: #00ff00;
       color: #111;
       border: none;
-      border-radius: 8px;
+      border-radius: 2px;
       cursor: pointer;
       transition: background-color 0.3s, transform 0.3s;
       font-weight: bold;
       letter-spacing: 1px;
       text-transform: uppercase;
-      box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+      box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
       text-decoration: none;
       display: block;
       margin: 0 auto;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
 
     .button:hover {
-      background-color: #45a049;
-      transform: scale(1.1);
+      background-color: #008000;
+      transform: scale(0.9);
     }
 
     .stat-counter {
@@ -85,8 +84,8 @@
 
     .motd {
       font-family: 'PT Mono', monospace;
-      background-color: #222;
-      color: #f0f0f0;
+      background-color: #0f0;
+      color: #fff;
       padding: 20px;
       font-size: 20px;
       border-bottom: 2px solid #4CAF50;
@@ -101,9 +100,9 @@
 
 <header>
   <a>
-    <img id="logo" src="logo.jpeg" alt="Logo">
+    <img id="logo" src="https://i.pinimg.com/736x/40/ac/f4/40acf4d1ca4b7ef356ced2afe172d562.jpg" alt="Logo">
   </a>
-  Szvy Central
+  Szvy Central V2
 </header>
 
 <div class="motd">
@@ -132,7 +131,7 @@
   </div>
   <div class="button-container">
     <a href="partners.html" class="button">
-     Partners
+      Partners
     </a>
   </div>
   <div class="button-container">
@@ -151,55 +150,4 @@
     </a>
   </div>
   <div class="button-container">
-    <a href="https://docs.google.com/document/d/1_q3Db1h5OwyZ78MCXHph2uD7Yl3TfRk52mfUx5eS6Bg/edit?usp=sharing" class="button">
-      Alt Links
-    </a>
-  </div>
-  <div class="button-container">
-    <button id="openScriptButton" class="button">
-      Open AB Cloaked
-    </button>
-  </div>
-</div>
-
-  <div class="stat-counter">
-  <script type="text/javascript" src="https://www.stat-counter.org/count/cgir"></script><br>
-  <script type='text/javascript' src='https://whomania.com/ctr?id='35380d9a2c4e3735878dc1918e80b8139c4b637c></script>
-</div>
-
-
-<script>
-  var urlObj = new window.URL(window.location.href);
-  var url = window.location;
-
-  if (url) {
-    var win;
-
-    document.getElementById('openScriptButton').onclick = function() {
-      if (win) {
-        win.focus();
-      } else {
-        win = window.open();
-        win.document.body.style.margin = '0';
-        win.document.body.style.height = '100vh';
-        var iframe = win.document.createElement('iframe');
-        iframe.style.border = 'none';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.margin = '0';
-        iframe.src = url;
-        win.document.body.appendChild(iframe);
-        window.location.replace("https://canvas.instructure.com/");
-
-        var interval = setInterval(function() {
-          if (win.closed) {
-            clearInterval(interval);
-            win = undefined;
-          }
-        }, 500);
-      }
-    };
-  }
-</script>
-</body>
-</html>
+    <a href="https://docs.google.com/document/d/1_q3Db1h5OwyZ78MCXH
